@@ -1,15 +1,13 @@
 import React from 'react';
 import Sidebar from '../../components/sidebar/index.jsx';
+import './wikiLandingsPage.css'
 
 function WikiLandingPage() {
-  return (
-    <div>
-        <h1>wikkilandingspage</h1>
-
-      <Sidebar />
-      
-    </div>
-  );
+    return (
+      <div className="page-background">
+        <Sidebar />
+      </div>
+    );
 }
-
+   
 export default WikiLandingPage;
