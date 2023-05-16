@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './sidebar.css'
-
 
 const categories = [
   { name: "Everyday life", img: require("../../assets/everydaylife.png") },
@@ -15,15 +14,26 @@ const categories = [
 ]
 
 function Sidebar({ setSelectedTopic, selectedTopic }) {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+  
+  const handleClick = (categoryName) => {
+    setSelectedTopic(categoryName);
+    setIsCollapsed(true);
+  }
+
+  const handleLogoClick = () => {
+    setIsCollapsed(false);
+  }
+
   return (
-    <div className="sidebar">
-      <img src={require("../../assets/wikiwallLogo.png")} alt="Logo" className="logo" />
-      <h2>Categories</h2>
+    <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
+      <img src={require("../../assets/wikiwallLogo.png")} alt="Logo" className="logo" onClick={handleLogoClick} />
+      {!isCollapsed && <h2>Categories</h2>}
       <ul>
         {categories.map((category, index) => (
-          <li key={index} onClick={() => setSelectedTopic(category.name)} className={selectedTopic === category.name ? 'selected' : ''}>
+          <li key={index} onClick={() => handleClick(category.name)} className={selectedTopic === category.name ? 'selected' : ''}>
             <img src={process.env.PUBLIC_URL + category.img} alt={category.name} />
-            {category.name}
+            {!isCollapsed && category.name}
           </li>
         ))}
       </ul>
