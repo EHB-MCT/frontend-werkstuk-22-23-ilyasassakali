@@ -1,15 +1,21 @@
+/* Footer.css */
 .footer {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f5f5f5;
+    justify-content: space-around;
     color: #0000CB;
     box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
     font-family: 'Poppins', sans-serif;
     position: relative;
-    width: 100%;
-    bottom: 0;
-    left: 0;
+    height: 200px;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: rgba(245, 245, 245, 0.4); 
+  backdrop-filter: blur(10px); 
+  margin: 10px 10px 0px 10px;
+  
+  
   }
   
   .footer .related-topics ul {
@@ -19,16 +25,41 @@
   
   .footer .middle-links {
     display: flex;
+    width: 50%;
     flex-direction: column;
-    align-items: center;
-    transform: rotate(-30deg);
+    
+  }
+  .footer .middle-links div{
+    display: flex;
+    justify-content: space-around;
+
   }
   
-  .footer .middle-links a {
+  .footer .middle-links p {
     margin-bottom: 10px;
     text-decoration: none;
     color: inherit;
+    grid-column: span 1;
   }
   
+  .footer .middle-links p:nth-child(odd) {
+    grid-row: 2;
+  }
 
   
+  .footer .logo img {
+    width: 150px;
+    margin-left: -100px;
+   
+  }
+
+  .below {
+    margin-top: 20px;
+  }
+  
+  .below .left{
+    margin-left: 100px;
+  }
+  .below .right{
+    margin-right: 100px;
+  }

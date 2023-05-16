@@ -15,7 +15,6 @@ function WikiLandingPage() {
         <Sidebar setSelectedTopic={setSelectedTopic} selectedTopic={selectedTopic}/>
         <Main selectedTopic={selectedTopic} />
         <Footer />
-
       </div>
     );
   } 

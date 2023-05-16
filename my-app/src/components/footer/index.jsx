@@ -5,23 +5,27 @@ function Footer() {
   return (
     <div className="footer">
       <div className="related-topics">
-        <h2>Related Topics</h2>
+        <p>Related Topics:</p>
         <ul>
-          <li>Topic 1</li>
-          <li>Topic 2</li>
-          <li>Topic 3</li>
-          <li>Topic 4</li>
+          <li>Tantalus</li>
+          <li>Narcissus</li>
+          <li>Lillith</li>
+          <li>perseus and andromeda</li>
         </ul>
       </div>
       <div className="middle-links">
-        <a href="#">Privacybeleid</a>
-        <a href="#">Statistieken</a>
-        <a href="#">Over Wikiwall</a>
-        <a href="#">Over Developers</a>
-        <a href="#">Disclaimers</a>
+        <div>
+        <p>Privacybeleid</p>
+        <p>Statistieken</p>
+        <p>Over Wikiwall</p>
+        </div>
+        <div className='below'>
+        <p className='left'>Over Developers</p>
+        <p className='right'>Disclaimers</p>
+        </div>
       </div>
       <div className="logo">
-        {/*  logo */}
+        <img src={require("../../assets/largewikiwalllogo.png")} alt=''/>
       </div>
     </div>
   );

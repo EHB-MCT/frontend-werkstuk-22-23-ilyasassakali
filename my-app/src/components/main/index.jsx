@@ -24,19 +24,19 @@ function Main({ selectedTopic }) {
 
 
         <div className="site-previews">
-          {Array(21).fill().map((_, i) => (
-            <motion.div 
-            className="preview-box" 
-            key={i}
-            whileHover={{ scale: 1.1 }}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.05, duration: 0.5 }}
-            >
-              <h2>Site {i+1}</h2>
-            </motion.div>
-          ))}
-        </div>
+            {Array(21).fill().map((_, i) => (
+                <motion.div 
+                className="preview-box" 
+                key={i}
+                whileHover={{ scale: 1.1, transition: { duration: 0.5 } }}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.05, duration: 0.5 }}
+                >
+                <h2>Site {i+1}</h2>
+                </motion.div>
+            ))}
+            </div>
       </div>
     );
 }
