@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import './sidebar.css'
 
 const categories = [
@@ -26,7 +27,12 @@ function Sidebar({ setSelectedTopic, selectedTopic }) {
   }
 
   return (
-    <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
+    <motion.div 
+      className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}
+      initial={{ y: '100vh' }}
+      animate={{ y: 0 }}
+      transition={{ type: 'spring', stiffness: 120 }}
+    >
       <img src={require("../../assets/wikiwallLogo.png")} alt="Logo" className="logo" onClick={handleLogoClick} />
       {!isCollapsed && <h2>Categories</h2>}
       <ul>
@@ -37,7 +43,7 @@ function Sidebar({ setSelectedTopic, selectedTopic }) {
           </li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 }
 

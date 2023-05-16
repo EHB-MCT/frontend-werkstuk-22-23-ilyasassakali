@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from '../../components/sidebar/index.jsx';
 import Main from '../../components/main/index.jsx';
+import Footer from '../../components/footer/index.jsx';
 import { useState } from 'react';
 import './wikiLandingsPage.css'
 
@@ -13,6 +14,8 @@ function WikiLandingPage() {
       <div className="page-background">
         <Sidebar setSelectedTopic={setSelectedTopic} selectedTopic={selectedTopic}/>
         <Main selectedTopic={selectedTopic} />
+        <Footer />
+
       </div>
     );
   } 
