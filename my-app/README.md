@@ -1,9 +1,25 @@
-# Getting Started with Create React App
+# Documentatie
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Theorie cursus leerkracht Front-End 
+zie canvas
+
+React-router library setup
+https://reactrouter.com/en/main/start/tutorial
+
+React-router library hook for redirections -> useNavigate
+https://reactrouter.com/en/main/hooks/use-navigate
+
+React hooks example inspired for title wikiwall 
+https://www.w3schools.com/react/showreact.asp?filename=demo2_react_usestate4
+
+Framer-motion library used for Div's transitions
+https://www.framer.com/motion/transition/
+https://www.framer.com/motion/examples/
+
+
 
 ## Available Scripts
-
+ 
 In the project directory, you can run:
 
 ### `npm start`

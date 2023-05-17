@@ -25,7 +25,7 @@ function Sidebar({ setSelectedTopic, selectedTopic }) {
   const handleLogoClick = () => {
     setIsCollapsed(false);
   }
-
+ 
   return (
     <motion.div 
       className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}
