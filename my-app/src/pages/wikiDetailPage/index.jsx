@@ -20,7 +20,7 @@ function DetailPage() {
 
 
         <div className="detail-content">
-            <motion.div 
+            <motion.div  
             className="detail-box" 
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ function DetailPage() {
                         colors, and rich cultural symbolism, showcasing 
                         timeless beauty and craftsmanship.</p>
                     <p>Creator: Ilyas Assakali</p>
-                    <button onClick={() => window.location.href='https://story-path.onrender.com/'}>VISIT TOPIC SITE</button>
+                    <button onClick={() => window.location.href='http://localhost:3000/parallax'}>VISIT TOPIC SITE</button>
                 </div>
                 <div className="image-content">
                     <img src={eximg} alt="Topic" />
