@@ -16,7 +16,8 @@ Framer-motion library used for Div's transitions
 https://www.framer.com/motion/transition/
 https://www.framer.com/motion/examples/
 
-
+Npm package for Parallax effect see props in docs
+https://www.npmjs.com/package/react-parallax
 
 ## Available Scripts
  
