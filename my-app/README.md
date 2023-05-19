@@ -7,7 +7,7 @@ React-router library setup
 https://reactrouter.com/en/main/start/tutorial
 
 React-router library hook for redirections -> useNavigate
-https://reactrouter.com/en/main/hooks/use-navigate
+https://reactrouter.com/en/main/hooks/use-navigate 
 
 React hooks example inspired for title wikiwall 
 https://www.w3schools.com/react/showreact.asp?filename=demo2_react_usestate4
@@ -18,6 +18,9 @@ https://www.framer.com/motion/examples/
 
 Npm package for Parallax effect see props in docs
 https://www.npmjs.com/package/react-parallax
+
+Npm package for useInView hook to detect elemnt in viewport
+https://www.npmjs.com/package/react-intersection-observer
 
 ## Available Scripts
  

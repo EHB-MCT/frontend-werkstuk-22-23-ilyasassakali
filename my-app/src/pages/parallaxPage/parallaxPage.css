@@ -4,14 +4,16 @@
 
 .parallax-page .content{
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .parallax-page .title {
     transform: none;
     text-align: center;
     font-weight: bold;
-    
-    margin-top: 200px;
     color: #fff;
     font-size: 70px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -20,7 +22,6 @@
     transform: none;
     text-align: center;
     font-weight: bold;
-    
     margin-top: 40px;
     color: #fff;
     font-size: 30px;
@@ -29,12 +30,8 @@
 
 
 .parallax-page .text-content{
-    text-align: center;
     font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
     color: #fff;
     font-size: 70px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -42,7 +39,6 @@
 
 .parallax-page .left-text-content{
     text-align: left;
-    font-weight: bold;
     position: absolute;
     top: 10%;
     left: 10%;
@@ -58,8 +54,7 @@
     text-align: center;
     font-weight: bold;
     position: absolute;
-    top: 30%;
-    margin: 0px 200px;
+    margin: 50px 200px;
     color: #fff;
     font-size: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
