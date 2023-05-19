@@ -40,6 +40,18 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.parallax-page .left-text-content{
+    text-align: left;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-10%, -10%);
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 
 
 .parallax-page .long-text-content{
