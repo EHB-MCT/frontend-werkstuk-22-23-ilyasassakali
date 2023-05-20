@@ -26,9 +26,13 @@ Npm package for type-animation
 https://www.npmjs.com/package/react-type-animation
 https://react-type-animation.netlify.app/examples
 
-## Available Scripts
+# Design
  
-In the project directory, you can run:
+icons for sidebar
+https://www.flaticon.com/
+
+
+
 
 ### `npm start`
 

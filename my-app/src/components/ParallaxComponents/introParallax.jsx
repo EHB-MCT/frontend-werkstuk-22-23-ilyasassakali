@@ -1,14 +1,14 @@
-import React, { useRef,useState,useEffect } from 'react';
+import React, { /*useRef,*/useState,useEffect } from 'react';
 import { motion, /*useScroll, useTransform */} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import {Parallax} from 'react-parallax'
-import mosqueImage from '../../../assetsparallax/firstMosque.jpeg';
-import secondmosqueImage from '../../../assetsparallax/secondMosque.jpeg';
-import thirdmosqueImage from '../../../assetsparallax/thirdMosque.jpeg';
-import fourthmosqueImage from '../../../assetsparallax/fourthMosque.jpeg';
-import fivemosqueImage from '../../../assetsparallax/fiveMosque.jpeg';
-import sixmosqueImage from '../../../assetsparallax/sixMosque.jpeg';
-import sevenmosqueImage from '../../../assetsparallax/sevenMosque.jpeg';
+import mosqueImage from '../../assetsparallax/firstMosque.jpeg';
+import secondmosqueImage from '../../assetsparallax/secondMosque.jpeg';
+import thirdmosqueImage from '../../assetsparallax/thirdMosque.jpeg';
+import fourthmosqueImage from '../../assetsparallax/fourthMosque.jpeg';
+import fivemosqueImage from '../../assetsparallax/fiveMosque.jpeg';
+import sixmosqueImage from '../../assetsparallax/sixMosque.jpeg';
+import sevenmosqueImage from '../../assetsparallax/sevenMosque.jpeg';
 import { TypeAnimation } from 'react-type-animation';
 
 
@@ -28,7 +28,7 @@ function IntroParallax() {
     }
   }, [inView]);
 
-  const ref = useRef(null);
+  //const ref = useRef(null);
   //const { scrollYProgress } = useScroll();
   //const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1.5]);
   //const opacity = useTransform(scrollYProgress, [0, 1], [0.8, 2]);
@@ -154,7 +154,7 @@ function IntroParallax() {
             animate={{ opacity: inView3 ? 1:0, x: inView3 ? 0:-100 }}
             transition={{ delay: 0.2, duration: 1 }}>Maleisië<br/>Terengganu<br/>Mogol-architectuur</motion.div>
         </div>  
-      </Parallax>
+      </Parallax> 
 
       <Parallax strength={250} bgImage={fivemosqueImage}>
         <div className="content">

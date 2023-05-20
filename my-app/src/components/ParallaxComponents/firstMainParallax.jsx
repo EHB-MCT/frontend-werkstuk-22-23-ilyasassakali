@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import {Parallax} from 'react-parallax'
-import verspreiding from '../../../assetsparallax/verspreiding.gif';
+import verspreiding from '../../assetsparallax/verspreiding.gif';
 import { TypeAnimation } from 'react-type-animation';
 
 function FirstMainParallax() {
