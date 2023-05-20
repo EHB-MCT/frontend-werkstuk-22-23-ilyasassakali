@@ -22,6 +22,10 @@ https://www.npmjs.com/package/react-parallax
 Npm package for useInView hook to detect elemnt in viewport
 https://www.npmjs.com/package/react-intersection-observer
 
+Npm package for type-animation 
+https://www.npmjs.com/package/react-type-animation
+https://react-type-animation.netlify.app/examples
+
 ## Available Scripts
  
 In the project directory, you can run:
