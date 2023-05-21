@@ -26,6 +26,13 @@ Npm package for type-animation
 https://www.npmjs.com/package/react-type-animation
 https://react-type-animation.netlify.app/examples
 
+used 3d model in iframe from following website
+https://sketchfab.com/3d-models/great-mosque-of-mecca-014cf5f9545b4e9c89f461c114a0c2f4
+
+used background music
+https://www.youtube.com/watch?v=GxpxKOmRkAA&ab_channel=Fantasy%26WorldMusicbytheFiechters
+
+
 # Design
  
 icons for sidebar

@@ -80,6 +80,7 @@ function IntroParallax() {
         >
             Islamitische Architectuur
         </motion.h1> 
+        
         <motion.h1
             className="subtitle"
             initial={{ opacity: 0, y: -50 }}
