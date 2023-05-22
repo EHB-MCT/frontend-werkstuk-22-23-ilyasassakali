@@ -170,7 +170,7 @@ De Al-Azhar-universiteit, of Al-Azhar Al-Shareef (letterlijk "De Edele Al-Azhar"
               transition={{ delay: 0.2, duration: 1 }}
               className="text-content"
             >
-Het Alhambra (qasr alhamrā' - Rode Paleis) is een middeleeuws paleis en fort van de Moorse heersers van het koninkrijk Granada in Andalusië (Zuid-Spanje). Het bevindt zich op een heuvelachtig plateau aan de zuidoostelijke grens van de stad Granada. Het hele complex van het Alhambra heeft een enorme oppervlakte van 140.000 m². Een mooie voorbeeld van een Moorse architectuur oorspronkelijk vanuit Marokko.</motion.div>
+Het Alhambra (qasr alhamrā' - Rode Paleis) is een middeleeuws paleis (ontworpen in 1238) en fort van de Moorse heersers van het koninkrijk Granada in Andalusië (Zuid-Spanje). Het bevindt zich op een heuvelachtig plateau aan de zuidoostelijke grens van de stad Granada. Het hele complex van het Alhambra heeft een enorme oppervlakte van 140.000 m². Een mooie voorbeeld van een Moorse architectuur oorspronkelijk vanuit Marokko.</motion.div>
           </div>
           <div className="image-section">
             <motion.img 

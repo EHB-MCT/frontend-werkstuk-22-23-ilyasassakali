@@ -25,10 +25,6 @@ function CallToPrayerService() {
     isMounted.current = true;
   }, []);
 
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
-
   return { data, loading, error };
 }
 

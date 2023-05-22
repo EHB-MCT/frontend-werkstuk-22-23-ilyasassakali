@@ -16,7 +16,7 @@ Framer-motion library used for Div's transitions
 https://www.framer.com/motion/transition/
 https://www.framer.com/motion/examples/
 
-Npm package for Parallax effect see props in docs
+Npm package for background Parallax effect 
 https://www.npmjs.com/package/react-parallax
 
 Npm package for useInView hook to detect elemnt in viewport
@@ -25,6 +25,9 @@ https://www.npmjs.com/package/react-intersection-observer
 Npm package for type-animation 
 https://www.npmjs.com/package/react-type-animation
 https://react-type-animation.netlify.app/examples
+
+Npm package for item parallax effects
+https://react-scroll-parallax.damnthat.tv/docs/usage/parallax-props
 
 used 3d model in iframe from following website
 https://sketchfab.com/3d-models/great-mosque-of-mecca-014cf5f9545b4e9c89f461c114a0c2f4
