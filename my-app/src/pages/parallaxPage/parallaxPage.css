@@ -176,3 +176,11 @@
 
   }
   
+  /*livedata*/
+
+  .parallax-page .outro .content{
+    position: relative;
+    height: 200vh;
+    overflow: hidden;
+    background-color: antiquewhite;
+  }
