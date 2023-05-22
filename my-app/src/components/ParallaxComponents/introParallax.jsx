@@ -12,7 +12,7 @@ import sevenmosqueImage from '../../assetsparallax/sevenMosque.jpeg';
 import { TypeAnimation } from 'react-type-animation';
 
  
-
+ 
  
 function IntroParallax() {
   const [check, inView] = useInView({

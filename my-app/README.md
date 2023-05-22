@@ -38,6 +38,8 @@ https://www.youtube.com/watch?v=GxpxKOmRkAA&ab_channel=Fantasy%26WorldMusicbythe
 fetch data with react as service
 https://component-party.dev/#fetch-data
 
+api website docs
+https://aladhan.com/prayer-times-api
 
 # Design
  
