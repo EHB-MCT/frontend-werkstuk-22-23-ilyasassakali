@@ -11,7 +11,7 @@ import sixmosqueImage from '../../assetsparallax/sixMosque.jpeg';
 import sevenmosqueImage from '../../assetsparallax/sevenMosque.jpeg';
 import { TypeAnimation } from 'react-type-animation';
 
-
+ 
 
  
 function IntroParallax() {
