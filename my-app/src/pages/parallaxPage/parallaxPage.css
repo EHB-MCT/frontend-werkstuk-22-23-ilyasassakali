@@ -245,9 +245,9 @@
 /**/
 
 .parallax-page .fourthmain {
-    height: 450vh;
+    height: 500vh;
     background-color: #f5f5f5;
-    font-family: Arial;
+    
 }
 
 .fourthmain .header {
@@ -261,6 +261,14 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 0 4px;
+}
+
+.fourthmain  h1{
+    font-size: 60px;
+}
+
+.fourthmain .row h2{
+    font-size: 30px;
 }
 
 .fourthmain .column {

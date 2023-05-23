@@ -8,7 +8,7 @@ import lamp from '../../assetsparallax/lamp.gif';
 import camel from '../../assetsparallax/camel.gif';
 
 
-
+ 
 
 
 function OutroParallax() {
@@ -19,9 +19,9 @@ function OutroParallax() {
 
     return(
         <ParallaxProvider>
-        <div className="outro">
+        <div className="outro"> 
 
-                <Parallax translateY={[-3500,-100]}  tagOuter="figure">
+                <Parallax translateY={[-6000,-500]}  tagOuter="figure">
                 <img className="camel" src={camel} alt="camel" />
                 </Parallax>
 

@@ -35,7 +35,7 @@ function ThirdMainParallax() {
     }
   }, [titleInView, buttonInView]);
 
-
+ 
   return (
     <div className="thirdmain">
 
@@ -55,6 +55,8 @@ function ThirdMainParallax() {
             ref={titleRef}
           >
             Rondleiding doorheen Al-Masjid al-Haram
+            <br />
+            Grootste moskee ter wereld!
           </motion.h1>
           <motion.button
             className="startButton"
