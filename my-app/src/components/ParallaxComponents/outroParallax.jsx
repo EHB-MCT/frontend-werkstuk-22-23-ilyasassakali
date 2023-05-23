@@ -1,14 +1,12 @@
 import CallToPrayerService from "../../services/callToPrayerService.js"
 import React, { useState,useEffect } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import moon from '../../assetsparallax/moon.png';
 import lamp from '../../assetsparallax/lamp.gif';
 import camel from '../../assetsparallax/camel.gif';
 
 
- 
+  
 
 
 function OutroParallax() {
@@ -21,7 +19,7 @@ function OutroParallax() {
         <ParallaxProvider>
         <div className="outro"> 
 
-                <Parallax translateY={[-6000,-500]}  tagOuter="figure">
+                <Parallax translateY={[-6000,-1000]}  tagOuter="figure">
                 <img className="camel" src={camel} alt="camel" />
                 </Parallax>
 

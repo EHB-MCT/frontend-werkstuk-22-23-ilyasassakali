@@ -1,7 +1,12 @@
 import React from 'react';
 import './footer.css';
+import { useNavigate } from 'react-router-dom';
+
 
 function Footer() {
+  const navigate = useNavigate();
+
+
   return (
     <div className="footer">
       <div className="related-topics">
@@ -21,11 +26,11 @@ function Footer() {
         </div>
         <div className='below'>
         <p className='left'>Over Developers</p>
-        <p className='right'>Disclaimers</p>
+        <p className='right'>Disclaimers</p> 
         </div>
       </div>
       <div className="logo">
-        <img src={require("../../assets/largewikiwalllogo.png")} alt=''/>
+        <img onClick={() => navigate('/')} src={require("../../assets/largewikiwalllogo.png")} alt=''/>
       </div>
     </div>
   );

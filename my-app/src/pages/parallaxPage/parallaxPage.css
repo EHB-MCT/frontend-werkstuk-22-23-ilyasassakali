@@ -1,14 +1,14 @@
  .parallax-page{
-    background-color: #fff;
+    background-color: #f5f5f5;
 }
-
+ 
 .parallax-page .content{
     height: 100vh;
     display: flex;
     justify-content: center; 
     align-items: center;
     flex-direction: column;
-}
+} 
 
 .parallax-page .title {
     transform: none;
@@ -226,13 +226,17 @@
 .outro .animations{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
 
 .lampl{
     transform: scaleX(-1);
+    width: 250px;
+}
+.lampr{
+    width: 250px;
 }
 
 

@@ -6,9 +6,11 @@ import SecondMainParallax from '../../components/ParallaxComponents/secondMainPa
 import ThirdMainParallax from '../../components/ParallaxComponents/thirdMainParallax.jsx';
 import FourthMainParallax from '../../components/ParallaxComponents/fourthMainParallax.jsx';
 import OutroParallax from '../../components/ParallaxComponents/outroParallax.jsx';
+import Footer from '../../components/footer/index.jsx';
 
 
- 
+
+  
 
  
 function ParallaxPage() {
@@ -21,6 +23,8 @@ function ParallaxPage() {
         <ThirdMainParallax/>
         <FourthMainParallax/>
         <OutroParallax/>
+        <Footer />
+
       </div>
   );
 }

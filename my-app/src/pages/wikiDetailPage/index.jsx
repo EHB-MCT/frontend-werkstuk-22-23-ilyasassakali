@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 function DetailPage() {
     const navigate = useNavigate();
 
-
+ 
  
 
   return (
