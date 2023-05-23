@@ -11,7 +11,7 @@ function DetailPage() {
     const navigate = useNavigate();
 
 
-
+ 
 
   return (
     <div className='page-background'>
@@ -34,7 +34,7 @@ function DetailPage() {
                         colors, and rich cultural symbolism, showcasing 
                         timeless beauty and craftsmanship.</p>
                     <p>Creator: Ilyas Assakali</p>
-                    <button onClick={() => window.location.href='http://localhost:3000/parallax'}>VISIT TOPIC SITE</button>
+                    <button onClick={() => navigate('parallax')}>VISIT TOPIC SITE</button>
                 </div>
                 <div className="image-content">
                     <img src={eximg} alt="Topic" />
