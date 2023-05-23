@@ -8,8 +8,9 @@ import FourthMainParallax from '../../components/ParallaxComponents/fourthMainPa
 import OutroParallax from '../../components/ParallaxComponents/outroParallax.jsx';
 
 
+ 
 
-
+ 
 function ParallaxPage() {
 
   return (

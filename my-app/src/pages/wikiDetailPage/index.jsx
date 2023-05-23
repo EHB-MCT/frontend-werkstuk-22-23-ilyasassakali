@@ -5,7 +5,7 @@ import {motion} from 'framer-motion';
 import eximg from "../../assets/islam.jpeg";
 import backImg from "../../assets/back.png";
 import { useNavigate } from 'react-router-dom';
-
+ 
 
 function DetailPage() {
     const navigate = useNavigate();

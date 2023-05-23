@@ -5,7 +5,7 @@ import Footer from '../../components/footer/index.jsx';
 import { useState } from 'react';
 import './wikiLandingsPage.css'
 
-
+ 
 
 function WikiLandingPage() {
     const [selectedTopic, setSelectedTopic] = useState("Everyday Life"); 
@@ -20,3 +20,4 @@ function WikiLandingPage() {
   } 
   
   export default WikiLandingPage;
+ 
