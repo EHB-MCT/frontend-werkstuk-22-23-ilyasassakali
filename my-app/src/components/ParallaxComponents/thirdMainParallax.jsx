@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 function ThirdMainParallax() {
     const [isIntroVisible, setIsIntroVisible] = useState(true);
 
-  const handleGoClick = () => {
+  const handleGoClick = () => { 
     setIsIntroVisible(false);
   };
 
@@ -67,7 +67,7 @@ function ThirdMainParallax() {
           >
             Start
           </motion.button>
-        </motion.div>
+        </motion.div> 
         
         }
         </AnimatePresence>

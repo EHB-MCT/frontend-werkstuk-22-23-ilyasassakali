@@ -2,13 +2,45 @@
     background-color: #f5f5f5;
 }
  
-.parallax-page .content{
+.parallax-page .content{ 
     height: 100vh;
     display: flex;
     justify-content: center; 
     align-items: center;
     flex-direction: column;
 } 
+
+.parallax-page .contenttitle{ 
+    height: 100vh;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    flex-direction: column;
+} 
+
+.titlebtn{
+    margin-top: 50px;
+    margin-right: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.titlebtn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+
 
 .parallax-page .title {
     transform: none;
@@ -22,7 +54,6 @@
     transform: none;
     text-align: center;
     font-weight: bold;
-    margin-top: 300px;
     color: #fff;
     font-size: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -159,20 +190,25 @@
   }
     
   .startButton {
-    color: white;
-    background-color: black;
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1.2rem;
+    margin-top: 50px;
+    margin-right: 15px;
+    width: 150px;
+    height: 50px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease 0s;
     cursor: pointer;
-    transition: 0.3s;
-    margin-top: 30px;
+    outline: none;
   }
   
   .startButton:hover {
-    background-color: rgba(255, 217, 0, 0.551);
-    
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);    
 
   }
   

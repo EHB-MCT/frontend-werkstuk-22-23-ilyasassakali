@@ -9,12 +9,33 @@ import fourthmosqueImage from '../../assetsparallax/fourthMosque.jpeg';
 import fivemosqueImage from '../../assetsparallax/fiveMosque.jpeg';
 import sixmosqueImage from '../../assetsparallax/sixMosque.jpeg';
 import sevenmosqueImage from '../../assetsparallax/sevenMosque.jpeg';
+import myMusicFile from '../../assetsparallax/backgroundmusic.mp3';
+
 import { TypeAnimation } from 'react-type-animation';
 
  
  
  
 function IntroParallax() {
+
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [audio, setAudio] = useState(null);
+
+  useEffect(() => {
+    const audioObj = new Audio(myMusicFile);
+    setAudio(audioObj);
+  }, []);
+
+  const handlePlayPause = () => {
+    if (!isPlaying) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
+
   const [check, inView] = useInView({
     triggerOnce: false,
     threshold: 0.8
@@ -70,7 +91,7 @@ function IntroParallax() {
         <div className="intro">
 
       <Parallax strength={250} bgImage={mosqueImage}>
-      <div className="content">
+      <div className="contenttitle">
 
       <motion.h1
             className="title"
@@ -80,6 +101,18 @@ function IntroParallax() {
         >
             Islamitische Architectuur
         </motion.h1> 
+
+    <motion.div
+    
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 2, duration: 1 }}
+    >
+    <button className='titlebtn' onClick={handlePlayPause}>
+        {isPlaying ? 'Pauzeer Muziek' : 'Speel Muziek'}
+      </button>
+    </motion.div>
+     
         
         <motion.h1
             className="subtitle"
