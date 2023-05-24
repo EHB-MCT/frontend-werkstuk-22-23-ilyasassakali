@@ -13,9 +13,11 @@ function WikiLandingPage() {
     return (
       <div className="page-background">
         <Sidebar setSelectedTopic={setSelectedTopic} selectedTopic={selectedTopic}/>
+      <div className="main-component">
         <Main selectedTopic={selectedTopic} />
-        <Footer />
       </div>
+      <Footer />
+      </div> 
     );
   } 
   

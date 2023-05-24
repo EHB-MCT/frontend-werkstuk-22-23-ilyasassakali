@@ -11,7 +11,7 @@
     padding: 20px;
     font-family: 'Poppins', sans-serif;
     color: #0000CB;
-    text-align: center;
+    text-align: center; 
     font-size: 50px;
     text-transform: uppercase;
     
@@ -27,6 +27,8 @@
     border-radius: 10px;
     border: none;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 500px;
   }
   
   .site-previews {

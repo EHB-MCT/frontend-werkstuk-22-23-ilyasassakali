@@ -5,21 +5,30 @@ import { useNavigate } from 'react-router-dom';
 import data from '../../services/studentData.json'
 
 
-function Main({ selectedTopic }) {
+function Main({ selectedTopic }) { 
   const [topics, setTopics] = useState([]); 
+  const [searchTerm, setSearchTerm] = useState('');
+
 
   useEffect(() => {
     setTopics(data);
   }, []);
 
 
-    const navigate = useNavigate();
+    const navigate = useNavigate(); 
       
     const handlePreviewBoxClick = (id) => {
         navigate(`/detailpage/${id}`);
     }
 
-    console.log(data);
+    const handleSearchChange = (event) => {
+      setSearchTerm(event.target.value);
+    }
+  
+    const filteredTopics = topics.filter((topic) => 
+      topic.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
 
     return (
       <div className="main">
@@ -36,12 +45,12 @@ function Main({ selectedTopic }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.05, duration: 0.5 }}
         >
-        <input type="text" placeholder="Search..." className="search-bar" />
+        <input type="text" placeholder=" 🔍 Search..." className="search-bar" value={searchTerm} onChange={handleSearchChange} />
         </motion.div>
         
 
         <div className="site-previews">
-        {topics.map((topic, i) => (
+        {filteredTopics.map((topic, i) => (
                 <motion.div 
                 className="preview-box" 
                 key={i}
