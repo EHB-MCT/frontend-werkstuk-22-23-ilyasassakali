@@ -3,52 +3,57 @@
 Theorie cursus leerkracht Front-End 
 zie canvas
 
-React-router library setup
+React-router library setup my project with react-router tutorial
 https://reactrouter.com/en/main/start/tutorial
 
-React-router library hook for redirections -> useNavigate
+React-router library hook for redirections to go from page to page useNavigate
 https://reactrouter.com/en/main/hooks/use-navigate 
 
-React hooks example inspired for title wikiwall 
+React hooks example inspired for changing the title in wikiwall 
 https://www.w3schools.com/react/showreact.asp?filename=demo2_react_usestate4
 
-Framer-motion library used for Div's transitions
+Framer-motion library used for Div's transition animations
 https://www.framer.com/motion/transition/
 https://www.framer.com/motion/examples/
 
-Npm package for background Parallax effect 
+Npm package for background Parallax effect  
 https://www.npmjs.com/package/react-parallax
 
-Npm package for useInView hook to detect elemnt in viewport
+Npm package for useInView hook to detect element in viewport that i used for animation
 https://www.npmjs.com/package/react-intersection-observer
 
-Npm package for type-animation 
+Npm package for auto type-animation 
 https://www.npmjs.com/package/react-type-animation
 https://react-type-animation.netlify.app/examples
 
-Npm package for item parallax effects
+Npm package for item parallax effects (see camel and grid-scroll animation)
 https://react-scroll-parallax.damnthat.tv/docs/usage/parallax-props
 
-used 3d model in iframe from following website
+used 3d asset in iframe from following website
 https://sketchfab.com/3d-models/great-mosque-of-mecca-014cf5f9545b4e9c89f461c114a0c2f4
 
-used background music
+used background music 
 https://www.youtube.com/watch?v=GxpxKOmRkAA&ab_channel=Fantasy%26WorldMusicbytheFiechters
 
 text color animation inspired from follow site for islamic decoration section 
 https://alvarotrigo.com/blog/css-text-animations/
 
-fetch data with react as service
+fetch data with react as a service 
 https://component-party.dev/#fetch-data
 
 api website docs
 https://aladhan.com/prayer-times-api
+
+deployed on netifly
+https://www.netlify.com/
 
 # Design
  
 icons for sidebar
 https://www.flaticon.com/
 
+design mockup xd-wireframe
+https://xd.adobe.com/view/4199e2be-7ce5-4e97-9039-425b7f76547b-14ca/screen/562fbbcb-f7f6-4ddb-8780-d3e2af7cb8a5
 
 
 

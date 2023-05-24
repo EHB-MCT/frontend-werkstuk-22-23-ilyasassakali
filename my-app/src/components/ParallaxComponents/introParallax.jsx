@@ -1,5 +1,5 @@
-import React, { /*useRef,*/useState,useEffect } from 'react';
-import { motion, /*useScroll, useTransform */} from 'framer-motion';
+import React, {useState,useEffect } from 'react';
+import { motion} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import {Parallax} from 'react-parallax'
 import mosqueImage from '../../assetsparallax/firstMosque.jpeg';
@@ -49,10 +49,6 @@ function IntroParallax() {
     }
   }, [inView]);
 
-  //const ref = useRef(null);
-  //const { scrollYProgress } = useScroll();
-  //const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1.5]);
-  //const opacity = useTransform(scrollYProgress, [0, 1], [0.8, 2]);
 
   const [refff1, inView1] = useInView({
     triggerOnce: false,
@@ -119,7 +115,6 @@ function IntroParallax() {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 50 }}
             transition={{ delay: 1, duration: 1 }}
-            //style={{ scale }}
         >
             Dompel jezelf onder in de pracht van Islamitische bouwkunst!
         </motion.h1>
