@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './main.css'
 import {motion} from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import data from '../../services/studentData.json'
 
 
 function Main({ selectedTopic }) {
+  const [topics, setTopics] = useState([]); 
+
+  useEffect(() => {
+    setTopics(data);
+  }, []);
+
 
     const navigate = useNavigate();
       
-    const handlePreviewBoxClick = () => {
-        navigate('/detailpage');
+    const handlePreviewBoxClick = (id) => {
+        navigate(`/detailpage/${id}`);
     }
 
+    console.log(data);
 
     return (
       <div className="main">
@@ -32,9 +40,8 @@ function Main({ selectedTopic }) {
         </motion.div>
         
 
-
         <div className="site-previews">
-            {Array(21).fill().map((_, i) => (
+        {topics.map((topic, i) => (
                 <motion.div 
                 className="preview-box" 
                 key={i}
@@ -42,9 +49,10 @@ function Main({ selectedTopic }) {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.05, duration: 0.5 }} 
-                onClick={handlePreviewBoxClick}
+                onClick={() => handlePreviewBoxClick(topic.id)}
+                style={{ backgroundImage: `url(${topic.picture})`, backgroundSize: 'cover' }} 
                 >
-                <h2>Site {i+1}</h2>
+                <h2>{topic.title}</h2>
                 </motion.div>
             ))}
         </div>

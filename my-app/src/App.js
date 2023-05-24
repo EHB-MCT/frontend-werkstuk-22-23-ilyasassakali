@@ -8,7 +8,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<WikiLandingPage />} />
-      <Route path="detailpage" element={<DetailPage />} />
+      <Route path="detailpage/:id" element={<DetailPage />} />
       <Route path="parallax" element={<ParallaxPage />} />
     </Routes>
   );
