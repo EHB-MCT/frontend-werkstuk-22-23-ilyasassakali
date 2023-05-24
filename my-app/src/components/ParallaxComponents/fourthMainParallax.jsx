@@ -37,16 +37,17 @@ function FourthMainParallax() {
         <ParallaxProvider>
 
         <div className="fourthmain">
-            <div className="header">
-                <h1>Islamitische decoratie</h1>
-            </div>
+            
+        
+            
 
             <div className="row">
-
             
-
+            
+                
             
                 <div className="column">
+                    
                 <Parallax speed={20} translateY={[-5,50]} tagOuter="figure">
                     <h2>Geometrie</h2>
                     {images1.map((src, i) => <img key={i} src={src}  alt="Geometrie" />)}
@@ -56,6 +57,7 @@ function FourthMainParallax() {
 
                 <div className="column">
                 <Parallax speed={50}   tagOuter="figure">
+                <h1>Islamitische decoratie</h1>
                     <h2>Kalligrafie</h2>
                     {images2.map((src, i) => <img key={i} src={src}  alt="Kalligrafie" />)}
                     </Parallax>

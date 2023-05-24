@@ -26,7 +26,7 @@ function DetailPage() {
     }
  
   return (
-    <div className='page-background'>
+    <div className='detail-background'>
       <img src={backImg} alt="Back" className="back-button" onClick={() => navigate('/')} />
       <div className="detail-content">
         <motion.div 

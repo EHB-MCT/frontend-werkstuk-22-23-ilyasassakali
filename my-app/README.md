@@ -35,6 +35,9 @@ https://sketchfab.com/3d-models/great-mosque-of-mecca-014cf5f9545b4e9c89f461c114
 used background music
 https://www.youtube.com/watch?v=GxpxKOmRkAA&ab_channel=Fantasy%26WorldMusicbytheFiechters
 
+text color animation inspired from follow site for islamic decoration section 
+https://alvarotrigo.com/blog/css-text-animations/
+
 fetch data with react as service
 https://component-party.dev/#fetch-data
 

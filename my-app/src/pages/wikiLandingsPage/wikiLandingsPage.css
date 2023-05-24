@@ -4,18 +4,32 @@
 }
 
 body{
-    background-color: #d4d3ff;
+}
+ 
+
+.page-background {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 150vh;
 }
 
-
-/* WikiLandingsPage.css */
-.page-background {
-    display: flex;
-    flex-direction: column;
-    min-height: 150vh;
-  }
-  
+/*
+.page-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/bg.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1; 
+}
+  */
   .main-component {
-    flex-grow: 1;
+    flex-grow: 1; 
   }
   

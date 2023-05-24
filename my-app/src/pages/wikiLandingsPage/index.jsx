@@ -11,7 +11,7 @@ function WikiLandingPage() {
     const [selectedTopic, setSelectedTopic] = useState("Everyday Life"); 
   
     return (
-      <div className="page-background">
+      <div className="page-background" >
         <Sidebar setSelectedTopic={setSelectedTopic} selectedTopic={selectedTopic}/>
       <div className="main-component">
         <Main selectedTopic={selectedTopic} />
