@@ -1,5 +1,7 @@
-import React from 'react';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+import React, { useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { useGLTF,Text } from '@react-three/drei';
 
 import geo1 from '../../assetsparallax/geo1.jpeg';
 import geo2 from '../../assetsparallax/geo2.jpeg';
@@ -26,6 +28,19 @@ import mu4 from '../../assetsparallax/mu4.jpeg';
 import mu5 from '../../assetsparallax/mu5.jpeg';
 import mu6 from '../../assetsparallax/mu6.jpeg';
 
+const modelPath = '/marakechTower3D/scene.gltf'; 
+
+function Model(props) {
+    const gltf = useGLTF(modelPath, true);
+    const ref = useRef();
+    useFrame(({ clock }) => {
+        if (ref.current) {
+            ref.current.rotation.y = clock.getElapsedTime();
+        }
+    });
+    return <primitive object={gltf.scene} {...props} ref={ref} />;
+  }
+  
 
 
 function FourthMainParallax() {
@@ -36,15 +51,53 @@ function FourthMainParallax() {
     return (
         <ParallaxProvider>
 
+<Canvas style={{ height: '100vh', width: '100%', marginTop: '50px', marginBottom: '200px' }}>
+  <ambientLight />
+  <Model position={[-3, 0, 0]} scale={[0.7,0.7,0.7]} />
+  <Text
+    position={[2, 0, 1]}
+    fontSize={0.7} 
+    color="#000000"
+   
+    fontWeight="bold"
+  >
+    Moorse minaret
+  </Text>
+  <Text
+    position={[2, -0.4, 1]} 
+    fontSize={0.2} 
+    color="#000000"
+   
+  >
+    Een Moorse minaret is een onderscheidend kenmerk van de 
+  </Text>
+  <Text
+    position={[2, -0.7, 1]} 
+    fontSize={0.2} 
+    color="#000000"
+  
+   
+  >
+    Moorse architectuur, de islamitische bouwstijl</Text>
+  <Text
+    position={[2, -1, 1]} 
+    fontSize={0.2} 
+    color="#000000"
+   
+  >
+    ontwikkeld in Noord-Afrika en het Iberisch schiereiland.  
+</Text>
+</Canvas>
+
+
+
+
         <div className="fourthmain">
             
         
             
 
             <div className="row">
-            
-            
-                
             
                 <div className="column">
                     

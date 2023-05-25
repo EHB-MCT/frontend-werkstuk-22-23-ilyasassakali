@@ -29,7 +29,13 @@ https://react-type-animation.netlify.app/examples
 Npm package for item parallax effects (see camel and grid-scroll animation)
 https://react-scroll-parallax.damnthat.tv/docs/usage/parallax-props
 
-used 3d asset in iframe from following website
+Npm package for 3d model (minaret) using react-three/fiber
+https://www.npmjs.com/package/@react-three/fiber
+https://docs.pmnd.rs/react-three-fiber/getting-started/introduction
+website used for 3d model
+https://sketchfab.com/3d-models/marrakech-minaret-tower-b70c5c9ad1ab4ebfab108e02b5e165be
+
+used 3d asset (interactif asset) in iframe from following website
 https://sketchfab.com/3d-models/great-mosque-of-mecca-014cf5f9545b4e9c89f461c114a0c2f4
 
 used background music 
